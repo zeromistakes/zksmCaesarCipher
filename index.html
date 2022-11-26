@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voronin Roman</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <div id="encrypt-block">
+                    <h3>Введіть текст: </h3>
+                    <textarea name="user-text" id="text-to-work" cols="40" rows="3"></textarea>
+                    <br><br>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="encrypt-btn">Зашифрувати</button>
+                        <button class="btn btn-primary" id="decrypt-btn">Дешифрувати</button>
+                        <button class="btn btn-danger" id="btn-reset">Очистити</button>
+                    </div>
+                    <h4>Крок зсуву:</h4>
+                    <select name="user_step" id="encrypt-step" size="1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Результат:</h3>
+                <textarea readonly id="output" cols="40" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
